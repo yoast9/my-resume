@@ -1,0 +1,30 @@
+{% extends "home-base.html"%}
+{% block title %}Home Page{% endblock %}
+
+{% block head%}
+  {{ super() }}
+{% endblock%}
+
+{% block page_content%}
+  <!-- Page Content -->
+  <div class="container">
+    <h1 class="mt-5"><i class="fa fa-address-book" aria-hidden="true"></i> Riley's info:</h1>
+    <p> Riley is a senior MIS major with a concentration in operations management</p>
+    <h4> Rileys Hobbies include: </h4>
+      <ul>
+        <li> Aquiring Knowledge </li>
+        <li> Rockclimbing </li>
+        <li> Making and Listeing to music </li>
+        <li> Outdoor activities <i class="fa fa-futbol-o" aria-hidden="true"></i></li>
+      </ul>
+  </div>
+{% endblock%}
+
+{% block scripts%}
+  {{super()}}
+  <script>
+  $(document).ready(function () {
+    $('#developer').tooltip()
+  });
+  </script>
+{% endblock%}
